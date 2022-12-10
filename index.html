@@ -12,14 +12,28 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <title>2023 To Do List</title>
 
     <style>
-
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
+        <link rel="stylesheet" media="only screen and (min-width:200px) and (max-width:480px)  href=" main.css">
 
+        @import url("main.css") only screen and (min-width:200px) and (max-width:480px);
 
+        @media only screen and (min-width:200px) and (max-width:480px) {
+            css속성
+        }
+
+        .img_responsive {
+            width: 100%; 
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            //모바일
+        }
 
 
         * {
@@ -112,442 +126,442 @@
 
         html {
 
-    display: flex;
+            display: flex;
 
-    flex-direction: column;
+            flex-direction: column;
 
-    align-items: center;
+            align-items: center;
 
-    justify-content: center;
+            justify-content: center;
 
-}
+        }
 
-.bucket {
+        .bucket {
 
-    background-size: cover;
+            background-size: cover;
 
-    background-position: center;
+            background-position: center;
 
-    margin: 8px;
+            margin: 8px;
 
-    position: relative;
+            position: relative;
 
-    font-weight: bold;
+            font-weight: bold;
 
-    font-size: 30px;
+            font-size: 30px;
 
-    text-align: center;
+            text-align: center;
 
-    word-break: keep-all;
+            word-break: keep-all;
 
-}
+        }
 
-.img1 {
+        .img1 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
 
-    color: white;
+            color: white;
 
-}
+        }
 
-.img2 {
+        .img2 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
 
-    color: tomato;
+            color: tomato;
 
-}
+        }
 
-.flex-row {
+        .flex-row {
 
-    display: flex;
+            display: flex;
 
-    flex-direction: row;
+            flex-direction: row;
 
-    align-items: center;
+            align-items: center;
 
-    justify-content: center;
+            justify-content: center;
 
-}
+        }
 
-.flex-column {
+        .flex-column {
 
-    display: flex;
+            display: flex;
 
-    flex-direction: column;
+            flex-direction: column;
 
-    align-items: center;
+            align-items: center;
 
-    justify-content: center;
+            justify-content: center;
 
-}
+        }
 
-.center {
+        .center {
 
-    display: flex;
+            display: flex;
 
-    flex-direction: column;
+            flex-direction: column;
 
-    align-items: center;
+            align-items: center;
 
-    justify-content: center;
+            justify-content: center;
 
-}
+        }
 
-.done::after {    
+        .done::after {
 
-    content: "";
+            content: "";
 
-    width: 70%;
+            width: 70%;
 
-    height: 70%;
+            height: 70%;
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
 
-    background-size: cover;
+            background-size: cover;
 
-    background-position: center;
+            background-position: center;
 
-    position: absolute;
+            position: absolute;
 
-    top: 20%;
+            top: 20%;
 
-}
+        }
 
-.wrap {
+        .wrap {
 
-    flex-wrap: wrap;
+            flex-wrap: wrap;
 
-}
+        }
 
-.msg {
+        .msg {
 
-    margin: -10px 0 30px;
+            margin: -10px 0 30px;
 
-    color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
 
-}
+        }
 
-.bg-t2 {
+        .bg-t2 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
 
-    width: 360px;
+            width: 360px;
 
-    background-size: cover;
+            background-size: cover;
 
-    background-position: center;
+            background-position: center;
 
-}
+        }
 
-.title-t2 {
+        .title-t2 {
 
-    background-color: blue;
+            background-color: blue;
 
-    border-radius: 10px;
+            border-radius: 10px;
 
-    padding: 4px 14px;
+            padding: 4px 14px;
 
-    color: white;
+            color: white;
 
-}
+        }
 
-.img1-t2 {
+        .img1-t2 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-blue.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-blue.png");
 
-    color: white;
+            color: white;
 
-}
+        }
 
-.img2-t2 {
+        .img2-t2 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightblue.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightblue.png");
 
-    color: blue;
+            color: blue;
 
-}
+        }
 
-.bg-t3 {
+        .bg-t3 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-paper.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-paper.png");
 
-    width: 360px;
+            width: 360px;
 
-    background-size: cover;
+            background-size: cover;
 
-    background-position: center;
+            background-position: center;
 
-}
+        }
 
-.title-t3 {
+        .title-t3 {
 
-    background-color: gray;
+            background-color: gray;
 
-    border-radius: 10px;
+            border-radius: 10px;
 
-    padding: 4px 14px;
+            padding: 4px 14px;
 
-    color: white;
+            color: white;
 
-}
+        }
 
-.img1-t3 {
+        .img1-t3 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-spa.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-spa.png");
 
-}
+        }
 
-.img2-t3 {
+        .img2-t3 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-rtan.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-rtan.png");
 
-}
+        }
 
-.bg-t4 {
+        .bg-t4 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-sky.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-sky.png");
 
-    width: 360px;
+            width: 360px;
 
-    background-size: cover;
+            background-size: cover;
 
-    background-position: center;
+            background-position: center;
 
-    color:white;
+            color: white;
 
-    text-shadow: 1px 1px 1px black;
+            text-shadow: 1px 1px 1px black;
 
-}
+        }
 
-.title-t4 {
+        .title-t4 {
 
-    color: yellow;
+            color: yellow;
 
-}
+        }
 
-.img1-t4 {
+        .img1-t4 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-shape1.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-shape1.png");
 
-}
+        }
 
-.img2-t4 {
+        .img2-t4 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-shape2.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-shape2.png");
 
-}
+        }
 
-.img3-t4 {
+        .img3-t4 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-shape3.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-shape3.png");
 
-}
+        }
 
-.img4-t4 {
+        .img4-t4 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-longshape1.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-longshape1.png");
 
-    width: 300px;
+            width: 300px;
 
-}
+        }
 
-.img5-t4 {
+        .img5-t4 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-longshape2.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-longshape2.png");
 
-    width: 300px;
+            width: 300px;
 
-    height: 200px;
+            height: 200px;
 
-}
+        }
 
-.done-t4::after {    
+        .done-t4::after {
 
-    content: "";
+            content: "";
 
-    width: 100px;
+            width: 100px;
 
-    height: 100px;
+            height: 100px;
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
 
-    background-size: cover;
+            background-size: cover;
 
-    background-position: center;
+            background-position: center;
 
-    position: absolute;
+            position: absolute;
 
-    top: 25%;
+            top: 25%;
 
-}
+        }
 
-.title-t5 {
+        .title-t5 {
 
-    background-color: none;
+            background-color: none;
 
-    color: tomato;
+            color: tomato;
 
-}
+        }
 
-.bg-t5 {
+        .bg-t5 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-clay.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-clay.png");
 
-    background-size: cover;
+            background-size: cover;
 
-    background-position: center;
+            background-position: center;
 
-    width: 360px;
+            width: 360px;
 
-    background-size: cover;
+            background-size: cover;
 
-    background-position: center;
+            background-position: center;
 
-}
+        }
 
-.img1-t5 {
+        .img1-t5 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic1.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic1.png");
 
-}
+        }
 
-.img2-t5 {
+        .img2-t5 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic2.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic2.png");
 
-}
+        }
 
-.img3-t5 {
+        .img3-t5 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic3.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic3.png");
 
-}
+        }
 
-.img4-t5 {
+        .img4-t5 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic4.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic4.png");
 
-}
+        }
 
-.img5-t5 {
+        .img5-t5 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic5.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic5.png");
 
-}
+        }
 
-.img6-t5 {
+        .img6-t5 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic6.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-pic6.png");
 
-}
+        }
 
-.bg-t6 {
+        .bg-t6 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-note.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-note.png");
 
-    color: black;
+            color: black;
 
-}
+        }
 
-.title-t6 {
+        .title-t6 {
 
-    background-color: none;
+            background-color: none;
 
-}
+        }
 
-.img1-t6 {
+        .img1-t6 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-highlight.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-highlight.png");
 
-}
+        }
 
-.img2-t6 {
+        .img2-t6 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-throughline.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-throughline.png");
 
-}
+        }
 
-.img3-t6 {
+        .img3-t6 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-colorpen1.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-colorpen1.png");
 
-}
+        }
 
-.img4-t6 {
+        .img4-t6 {
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-colorpen2.png");
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-colorpen2.png");
 
-}
+        }
 
-.bg-t6 h1, p {
+        .bg-t6 h1,
+        p {
 
-    color: white;
+            color: white;
 
-}
+        }
 
 
 
 
 
-.bg-t6 div {
+        .bg-t6 div {
 
-    flex-wrap: nowrap;
+            flex-wrap: nowrap;
 
-    flex-direction: column;
+            flex-direction: column;
 
-    margin-top: 100px;
+            margin-top: 100px;
 
-}
+        }
 
-.bg-t6 div div {
+        .bg-t6 div div {
 
-    width: 400px;
+            width: 400px;
 
- 
 
-}
 
-.bg-t7 {
+        }
 
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-red.png");  
+        .bg-t7 {
 
-    background-size: cover;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-red.png");
 
-    background-position: center;
+            background-size: cover;
 
+            background-position: center;
 
 
 
 
-    color: #f85151;
 
-}
+            color: #f85151;
 
-.title-t7 {
+        }
 
-    font-size: 20px;
+        .title-t7 {
 
-    margin-top: 80px;
+            font-size: 20px;
 
-}
+            margin-top: 80px;
 
-.img1-t7 {
+        }
 
-    background-color: rgba(255,255,255,0.9);
+        .img1-t7 {
 
-    border: 1px solid #f85151;
+            background-color: rgba(255, 255, 255, 0.9);
 
-    border-radius: 8px;
+            border: 1px solid #f85151;
 
-}
+            border-radius: 8px;
 
-.hidden {
+        }
 
-    visibility: hidden;
+        .hidden {
 
-}
+            visibility: hidden;
 
+        }
     </style>
 
 </head>
@@ -564,27 +578,28 @@
 
     <div class="flex-row wrap">
 
-    <div class="flex-column wrap">
+        <div class="flex-column wrap">
 
-        <div class="bucket img2-t3 center">베이킹 꾸준히 하기</div>
+            <div class="bucket img2-t3 center">베이킹 꾸준히 하기</div>
 
-        <div class="bucket img1-t3 center">건강한 다이어트</div>
+            <div class="bucket img1-t3 center">건강한 다이어트</div>
 
-        <div class="bucket img2-t3 center">월 1권 독서</div>
+            <div class="bucket img2-t3 center">월 1권 독서</div>
 
+        </div>
+
+        <div class="flex-column wrap">
+
+            <div class="bucket img1-t3 center">코딩 공부하기</div>
+
+            <div class="bucket img2-t3 center">집 이사하기</div>
+
+            <div class="bucket img1-t3 center">치과위생사 보수교육 듣기</div>
+
+
+
+        </div>
     </div>
-
-    <div class="flex-column wrap">
-
-        <div class="bucket img1-t3 center">코딩 공부하기</div>
-
-        <div class="bucket img2-t3 center">집 이사하기</div>
-
-        <div class="bucket img1-t3 center">치과위생사 보수교육 듣기</div>
-
-
-
-    </div></div>
 
 
 
