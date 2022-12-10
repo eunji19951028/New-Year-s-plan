@@ -10,7 +10,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <title>2023 To Do List</title>
@@ -18,27 +18,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
-        <link rel="stylesheet" media="only screen and (min-width:200px) and (max-width:480px)  href=" main.css">
-
-        @import url("main.css") only screen and (min-width:200px) and (max-width:480px);
-
-        @media (max-width: 480px) {
-            .bucket {
-                width: 10%;
-            }
-            .bg {
-                width: 100%;
-            }
-        }
-
-
+       
         * {
 
             font-family: 'Nanum Pen Script', cursive;
 
         }
-
-
 
 
 
@@ -48,6 +33,12 @@
 
             font-size: 100px;
 
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                font-size: 30px
+            }
         }
 
 
@@ -66,6 +57,12 @@
 
         }
 
+        @media (max-width: 600px) {
+            .bg {
+                background-size: 100%;
+            }
+        }
+
 
 
 
@@ -76,6 +73,12 @@
 
             font-size: 40px;
 
+        }
+
+        @media (max-width: 600px) {
+            .msg {
+                font-size: 15px;
+            }
         }
 
 
@@ -90,6 +93,14 @@
 
             font-size: 30px;
 
+        }
+
+        @media (max-width: 600px) {
+            .bucket {
+                width: 50px;
+                height: 50px;
+                font-size: 10px;
+            }
         }
 
 
@@ -150,6 +161,12 @@
 
             word-break: keep-all;
 
+        }
+
+        @media (max-width: 600px) {
+            .bucket {
+                font-size: 10px;
+            }
         }
 
         .img1 {
